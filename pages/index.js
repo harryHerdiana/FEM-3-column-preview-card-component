@@ -4,17 +4,16 @@ import { Fragment } from "react";
 export default function Home() {
   return (
     <Fragment>
-      <Head>
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
-        </style>
-      </Head>
-      <div className="h-auto ">
+      <main className="h-auto ">
         <div className="text-sm p-4 my-auto text-very-white container mx-auto desktop:flex desktop:my-auto desktop:mt-40">
           <div className=" container flex-col bg-bright-orange desktop:rounded-tr-none rounded-t-lg desktop:rounded-l-lg ">
             <div className="p-8">
-              <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                aria-hidden
+                width="64"
+                height="40"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g fill="none" fill-rule="evenodd">
                   <circle fill="#000" opacity=".201" cx="20" cy="20" r="20" />
                   <path
@@ -24,19 +23,24 @@ export default function Home() {
                   />
                 </g>
               </svg>
-              <h1 className="my-8 font-shoulder text-4xl">SEDANS</h1>
+              <div className="my-8 font-shoulder text-4xl">SEDANS</div>
               <p className="font-lexend">
                 Choose a sedan for its affordabilty andexcellent fuel economy.
                 Ideal for cruising in the city or on your next road trip
               </p>
-              <button className="font-lexend ring ring-white hover:ring-transparent hover:bg-white hover:text-bright-orange  rounded-full w-32 h-8 m-4 relative right-4">
+              <button className="font-lexend ring ring-white focus-visible:ring-transparent hover:ring-transparent focus-visible:bg-white hover:bg-white focus-visible:text-bright-orange  hover:text-bright-orange  rounded-full w-32 h-8 mx-4 mt-10 relative right-4">
                 Learn More
               </button>
             </div>
           </div>
           <div className="container flex-col bg-dark-cyan">
             <div className="p-8">
-              <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                aria-hidden
+                width="64"
+                height="40"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g fill="none" fill-rule="evenodd">
                   <circle fill="#000" opacity=".201" cx="20" cy="20" r="20" />
                   <path
@@ -46,19 +50,24 @@ export default function Home() {
                   />
                 </g>
               </svg>
-              <h1 className="my-8 font-shoulder text-4xl">SUV</h1>
+              <div className="my-8 font-shoulder text-4xl">SUV</div>
               <p className="font-lexend">
                 Take an SUV for its spacious interior, power, and versatility.
                 Perfect for your next family vacation and off-road adventures.
               </p>
-              <button className="text-white ring ring-white font-lexend hover:bg-white hover:text-dark-cyan  rounded-full w-32 h-8 m-4 relative right-4">
+              <button className="text-white ring ring-white font-lexend focus-visible:bg-white focus-visible:text-dark-cyan hover:bg-white hover:text-dark-cyan rounded-full w-32 h-8 mx-4 mt-10 relative right-4">
                 Learn More
               </button>
             </div>
           </div>
           <div className="bg-very-dark-cyan rounded-b-lg desktop:rounded-r-lg desktop:rounded-bl-none">
             <div className="p-8">
-              <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                aria-hidden
+                width="64"
+                height="40"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g fill="none" fill-rule="evenodd">
                   <circle fill="#000" opacity=".201" cx="20" cy="20" r="20" />
                   <path
@@ -68,18 +77,18 @@ export default function Home() {
                   />
                 </g>
               </svg>
-              <h1 className="my-8 font-shoulder text-4xl">LUXURY</h1>
+              <div className="my-8 font-shoulder text-4xl">LUXURY</div>
               <p className="font-lexend">
                 Cruise in the best car brands without the bloated prices. Enjoy
                 the enhanced comfort of a luxury rental and arrive in style.
               </p>
-              <button className="text-white ring ring-white font-lexend hover:bg-white hover:text-very-dark-cyan  rounded-full w-32 h-8 m-4 relative right-4">
+              <button className="text-white ring ring-white font-lexend focus-visible:bg-white focus-visible:text-very-dark-cyan hover:bg-white hover:text-very-dark-cyan rounded-full w-32 h-8 mx-4 mt-10 relative right-4">
                 Learn More
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </Fragment>
   );
 }
