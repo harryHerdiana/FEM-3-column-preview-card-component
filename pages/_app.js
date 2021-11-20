@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
       <Head>
+        <title>Frontend Mentor Challenge</title>
         <meta name="description" content="Front End Mentor Challenge" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <style>
